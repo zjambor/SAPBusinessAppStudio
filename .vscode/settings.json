@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "dialect": "SQLite",
+            "name": "bookshop.db",
+            "database": "/home/user/projects/bookshop/bookshop.db"
+        },
+        {
+            "dialect": "SQLite",
+            "database": "/home/user/projects/bookshop/bookshop.db",
+            "name": "bookshop.db"
+        }
+    ]
+}

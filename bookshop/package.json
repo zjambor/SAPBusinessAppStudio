@@ -1,0 +1,33 @@
+{
+  "name": "@sap/capire-bookshop",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^3.34.1",
+    "@sap/cds-dk": "^1.8.0",
+    "express": "^4.17.1",
+    "hdb": "^0.17.1",
+    "sqlite3": "^4.2.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "jest": "^26.0.0"
+  },
+  "scripts": {
+    "start": "npx cds run",
+    "test": "jest"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "bookshop.db"
+        }
+      }
+    }
+  }
+}
