@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build cloud-cap-samples-java-openSAP-week4-unit5",
+      "type": "shell",
+      "command": "mvn clean install",
+      "options": {
+        "cwd": "/home/user/projects/cloud-cap-samples-java-openSAP-week4-unit5"
+      }
+    }
+  ]
+}

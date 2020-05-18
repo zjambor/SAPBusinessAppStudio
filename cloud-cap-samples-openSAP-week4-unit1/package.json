@@ -1,0 +1,28 @@
+{
+  "name": "@sap/capire-samples",
+  "description": "The umbrella project for all samples to easily setup for local development and tests.",
+  "repository": "https://github.com/SAP-samples/cloud-cap-samples.git",
+  "author": "daniel.hutzel@sap.com",
+  "private": true,
+  "scripts": {
+    "cleanup": "lerna clean -y && rm -fr node_modules",
+    "install": "(npm -s run lerna) && lerna bootstrap --hoist",
+    "lerna": "npx --no-install lerna -v > /dev/null || npm i lerna --no-save",
+    "test": "jest",
+    "bookshop-enhanced": "cds watch packages/bookshop-enhanced",
+    "bookshop": "cds watch packages/bookshop",
+    "bookstore": "cds watch packages/bookstore",
+    "products-service": "cds watch packages/products-service",
+    "reviews-service": "cds watch packages/reviews-service"
+  },
+  "dependencies": {
+    "@sap/cds": "^3",
+    "express": "^4"
+  },
+  "--add-these-to-devDependencies-for-tests": {
+    "@types/jest": "*",
+    "sqlite3": "*",
+    "jest": "*"
+  },
+  "license": "SAP SAMPLE CODE LICENSE"
+}

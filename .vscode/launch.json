@@ -8,6 +8,19 @@
       "request": "launch",
       "name": "Launch Program",
       "program": "${file}"
+    },
+    {
+      "name": "Run cloud-cap-samples-java-openSAP-week4-unit5-1",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "my.bookshop.Application",
+      "projectName": "bookshop",
+      "preLaunchTask": "Build cloud-cap-samples-java-openSAP-week4-unit5",
+      "cwd": "/home/user/projects/cloud-cap-samples-java-openSAP-week4-unit5",
+      "envFile": "/home/user/projects/cloud-cap-samples-java-openSAP-week4-unit5/.env1",
+      "env": {
+        "run.config": "{\"handlerId\":\"cap_run_config_handler_id\",\"runnableId\":\"/home/user/projects/cloud-cap-samples-java-openSAP-week4-unit5\"}"
+      }
     }
   ]
 }
